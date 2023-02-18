@@ -20,11 +20,13 @@ function App() {
             level={2}
             style={{ color: "white", lineHeight: "inherit", marginBottom: 0 }}
           >
-            Lai Food
+            Choices Austin
           </Title>
           <div>{authed ? <MyCart /> : <SignupForm />}</div>
         </div>
       </Header>
+
+
       <Content
         style={{
           padding: "50px",
@@ -38,6 +40,8 @@ function App() {
           <LoginForm onSuccess={() => setAuthed(true)} />
         )}
       </Content>
+
+      
     </Layout>
   );
 }
